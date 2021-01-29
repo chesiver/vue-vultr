@@ -7,6 +7,6 @@ module.exports = {
         host: '0.0.0.0',
         hot: true,
         disableHostCheck: true,
-        public: 'http://45.63.91.38:8080',
+        public: 'www.chesiver.top:8080',
     },
 }
