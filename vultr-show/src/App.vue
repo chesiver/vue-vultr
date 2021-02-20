@@ -1,11 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Adam Liu's Space</h1>
-  <ul>
-    <li>
-      <ToDoItem />
-    </li>
-  </ul>
 </template>
 
 <style>
