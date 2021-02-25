@@ -3,8 +3,8 @@
     <div ref="resizeRef">
         <svg
             ref="svgRef"
-            width="600"
-            height="500"
+            width="1000"
+            height="750"
         >
             <g class="x-axis" />
             <g class="y-axis" />
