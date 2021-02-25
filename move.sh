@@ -1,4 +1,6 @@
+git pull
 cd vultr-show
+npm install
 npm run build
 cd ..
 echo "removing and copying....."
