@@ -68,6 +68,7 @@ export default {
                 svg.select(".y-axis")
                     .attr("transform", `translate(${margin.left}, 0)`)
                     .call(yAxis);
+                svg.nodes()[0].scrollIntoView();
             });
         });
 
