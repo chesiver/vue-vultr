@@ -7,7 +7,7 @@
                 type="rotate"
             >
                 <img
-                    width="400"
+                    width="500"
                     height="300"
                     src="./assets/yukino.png"
                     alt="logrocket logo"
