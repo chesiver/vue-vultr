@@ -16,7 +16,10 @@
         </kinesis-container>
     </div>
     <div style="display: flex; justify-content: space-around; ">
-      <router-link to="/d3_show">
+        <router-link to="/">
+            <h1>Go to Home</h1>
+        </router-link>
+        <router-link to="/d3_show">
             <h1>Go to D3 Playground</h1>
         </router-link>
         <br />

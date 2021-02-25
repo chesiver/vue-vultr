@@ -31,7 +31,6 @@ export default {
     setup(props) {
         const svgRef = ref(null);
         onMounted(() => {
-            console.log(props.data.length);
             const svg = select(svgRef.value);
             watchEffect(() => {
                 const width = svg.attr("width"),
