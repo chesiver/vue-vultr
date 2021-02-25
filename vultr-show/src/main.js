@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
+import { createApp} from 'vue'
 import App from './App.vue'
+import VueKinesis from 'vue-kinesis'
 
-createApp(App)
-    .mount('#app')
+const app = createApp(App);
+app.use(VueKinesis);
+app.mount('#app');

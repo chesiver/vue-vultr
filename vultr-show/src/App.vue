@@ -1,51 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Adam Liu's Space</h1>
-  <svg ref="chart" />
-  <div id="wrapper">
-    <textarea v-model="message"></textarea>
-    <button @click="redrawChart" id="confirm">Update Diagram</button>
-  </div>
+  <kinesis-container event="move">
+    <kinesis-element strength="10" type="rotate">
+      <img 
+      width="600" height="400"
+      src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/120194685_3145559558885908_1170017041477723343_o.png?_nc_cat=106&ccb=3&_nc_sid=8024bb&_nc_ohc=kuykmYcf6RAAX99rhu6&_nc_ht=scontent-nrt1-1.xx&oh=6bd14cc63b1373247ae2a55779e44910&oe=605BF7E8" alt="logrocket logo" />
+    </kinesis-element>
+  </kinesis-container>
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
-import { select } from "d3";
-
-export default {
-  setup() {
-    const chart = ref(null);
-    const message = ref(null);
-    const drawCircles = function(data) {
-      const element = chart.value;
-      const svg = select(element)
-        .attr("width", 400)
-        .attr("height", 400);
-      const shapes = svg.selectAll(".shapes").data(data).enter();
-      shapes
-        .append("circle")
-        .attr("fill", "red")
-        .attr("cx", function (d, i) {
-          return (i + 1) * 25;
-        })
-        .attr("cy", 10)
-        .attr("r", 10);
-    }
-    onMounted(() => {
-      drawCircles([1,2,3,4,5]);
-    });
-    const redrawChart = function() {
-      const num = Number(message.value);
-      console.log(num);
-      drawCircles(Array(num).fill(0));
-    }
-    return {
-      chart,
-      message,
-      redrawChart,
-    };
-  },
-};
+export default {};
 </script>
 <style>
 #app {

@@ -1,4 +1,5 @@
 module.exports = {
+    lintOnSave: 'warning',
     configureWebpack: {
         // other webpack options to merge in ...
     },
